@@ -15,9 +15,9 @@ img {
 .nav { display:flex; align-items:flex-start; gap:clamp(18px,3vw,54px); font-size:clamp(14px,1.6vw,22px); font-weight:400; padding-top:7px; }
 .nav a, .artworks-trigger { white-space:nowrap; cursor:pointer; border:0; background:transparent; color:inherit; padding:0; font:inherit; text-transform:uppercase; }
 .artworks { position:relative; z-index:5; }
-.artworks-menu { display:none; position:absolute; right:0; top:18px; width:132px; padding:10px 0; background:#111; border:1px solid #292929; }
-.artworks:hover .artworks-menu, .artworks:focus-within .artworks-menu { display:grid; gap:10px; }
-.artworks-menu a { padding:0 12px; font-size:9px; }
+.artworks-menu { display:none; position:absolute; right:0; top:calc(100% + 10px); width:max-content; min-width:100%; padding:.7em 0; background:#111; border:1px solid #292929; }
+.artworks:hover .artworks-menu, .artworks:focus-within .artworks-menu, .artworks.is-open .artworks-menu { display:grid; gap:.55em; }
+.artworks-menu a { padding:0 .85em; font-size:.68em; }
 .mobile-toggle { display:none; }
 .nav a:hover, .nav a[aria-current='page'], .artworks-trigger:hover { opacity:.55; }
 .page { padding:0 clamp(20px,4vw,56px) 38px; }
@@ -144,6 +144,17 @@ img {
     font-size:11px;
   }
   .site-header.is-menu-open .nav { display:flex; }
-  .site-header .artworks-menu { display:none !important; }
+  .site-header .artworks-menu {
+    position:static;
+    display:none;
+    width:auto;
+    min-width:0;
+    padding:10px 0 0;
+    border:0;
+    background:transparent;
+    text-align:right;
+  }
+  .site-header .artworks.is-open .artworks-menu { display:grid; gap:10px; }
+  .site-header .artworks-menu a { padding:0; font-size:.82em; }
   .home-page .nav { margin-left:0; }
 }
