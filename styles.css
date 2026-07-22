@@ -11,6 +11,7 @@ img {
 .site-header { display:flex; align-items:flex-start; justify-content:space-between; gap:24px; padding:32px clamp(20px,4vw,56px) 28px; }
 .brand { font-size:clamp(18px,2.1vw,29px); line-height:1.08; letter-spacing:-.06em; font-weight:500; }
 .brand small { display:block; margin-top:10px; font-size:.58em; letter-spacing:-.045em; }
+.brand .brand-specialty { margin-top:4px; font-size:.45em; letter-spacing:-.02em; }
 .nav { display:flex; align-items:flex-start; gap:clamp(18px,3vw,54px); font-size:10px; font-weight:600; padding-top:7px; }
 .nav a, .artworks-trigger { white-space:nowrap; cursor:pointer; border:0; background:transparent; color:inherit; padding:0; font:inherit; text-transform:uppercase; }
 .artworks { position:relative; z-index:5; }
