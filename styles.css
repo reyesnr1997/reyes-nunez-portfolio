@@ -93,7 +93,7 @@ img {
 /* Home: only the name and discipline stay visible while scrolling */
 .home-page .site-header { position:relative; z-index:2; min-height:160px; background:transparent; }
 .home-page .brand { position:fixed; top:32px; left:clamp(20px,4vw,56px); z-index:40; }
-.home-page .home-tagline { position:absolute; left:clamp(20px,4vw,56px); top:92px; color:#8f8f8f; font-size:clamp(18px,2.1vw,29px); font-weight:400; line-height:1.08; letter-spacing:-.06em; }
+.home-page .home-tagline { position:absolute; left:clamp(20px,4vw,56px); top:92px; color:var(--white); font-size:clamp(18px,2.1vw,29px); font-weight:400; line-height:1.08; letter-spacing:-.06em; }
 @media (max-width:620px) {
   .home-card { height:min(31vw,400px); min-height:210px; }
   .home-page .site-header { min-height:auto; }
