@@ -69,8 +69,24 @@ if (detail) {
 
 
 
+
+
+
+
 document.querySelectorAll('.artworks-trigger').forEach((trigger) => {
-  trigger.addEventListener('click', () => { location.href = 'index.html'; });
+  trigger.setAttribute('aria-expanded', 'false');
+  trigger.addEventListener('click', (event) => {
+    event.stopPropagation();
+    const artworksMenu = trigger.closest('.artworks');
+    const open = artworksMenu.classList.toggle('is-open');
+    trigger.setAttribute('aria-expanded', String(open));
+  });
+});
+document.addEventListener('click', () => {
+  document.querySelectorAll('.artworks.is-open').forEach((artworksMenu) => {
+    artworksMenu.classList.remove('is-open');
+    artworksMenu.querySelector('.artworks-trigger')?.setAttribute('aria-expanded', 'false');
+  });
 });
 document.querySelectorAll('.site-header').forEach((header) => {
   const toggle = document.createElement('button');
