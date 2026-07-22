@@ -55,16 +55,18 @@ if (detail) {
   detail.querySelector('.artwork-info').innerHTML = `<p>${work.medium}<br>${work.size}</p>`;
   const context = detail.querySelector('.artwork-context');
   if (work.project) {
-    const projectImage = work.project === 'NUDES' ? 'assets/Ccontext-nudes-poster-8865d8e9.jpg' : 'assets/Ccontext-salvador-bd524f5d.jpg';
+    const projectImage = work.project === 'NUDES' ? 'context-nudes-poster-8865d8e9.jpg' : 'context-salvador-bd524f5d.jpg';
     context.classList.add('is-visible');
     if (work.project === 'NUDES') {
       context.classList.add('is-nudes');
-      context.innerHTML = `<img class="context-still" src="assets/Ccontext-nudes-still-fbff4bd6.jpg" alt="Artwork in set context"><div class="context-credit"><img src="${projectImage}" alt="Nudes project"><p><strong>${work.project}</strong><br>${work.credit}</p></div>`;
+      context.innerHTML = `<img class="context-still" src="context-nudes-still-fbff4bd6.jpg" alt="Artwork in set context"><div class="context-credit"><img src="${projectImage}" alt="Nudes project"><p><strong>${work.project}</strong><br>${work.credit}</p></div>`;
     } else {
       context.innerHTML = `<img src="${projectImage}" alt="${work.project} project"><p><strong>${work.project}</strong><br>${work.credit}</p>`;
     }
   }
 }
+
+
 
 
 document.querySelectorAll('.artworks-trigger').forEach((trigger) => {
@@ -87,7 +89,3 @@ document.querySelectorAll('.site-header').forEach((header) => {
     toggle.setAttribute('aria-label', 'Open menu');
   });
 });
-
-
-
-
