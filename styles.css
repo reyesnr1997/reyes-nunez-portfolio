@@ -10,8 +10,8 @@ img {
 }
 .site-header { display:flex; align-items:flex-start; justify-content:space-between; gap:24px; padding:32px clamp(20px,4vw,56px) 28px; }
 .brand { font-size:clamp(18px,2.1vw,29px); line-height:1.08; letter-spacing:-.06em; font-weight:500; }
-.brand small { display:block; margin-top:10px; font-size:.58em; letter-spacing:-.045em; }
-.brand .brand-specialty { margin-top:4px; font-size:.45em; letter-spacing:-.02em; }
+.brand small { display:block; margin-top:10px; color:#8f8f8f; font-size:.58em; letter-spacing:-.045em; }
+.brand .brand-specialty { margin-top:10px; color:var(--white); font-size:1em; letter-spacing:-.06em; }
 .nav { display:flex; align-items:flex-start; gap:clamp(18px,3vw,54px); font-size:10px; font-weight:600; padding-top:7px; }
 .nav a, .artworks-trigger { white-space:nowrap; cursor:pointer; border:0; background:transparent; color:inherit; padding:0; font:inherit; text-transform:uppercase; }
 .artworks { position:relative; z-index:5; }
@@ -27,8 +27,8 @@ img {
 .home-card:hover img { transform:scale(1.025); }
 .home-card h1 { position:absolute; bottom:8%; right:3.5%; margin:0; font-size:clamp(28px,3.8vw,56px); letter-spacing:-.06em; font-weight:400; }
 .home-card--scenic img { object-position:center 18%; }
-.home-page .brand { display:flex; flex-wrap:wrap; align-items:baseline; column-gap:14px; }
-.home-page .brand small { display:inline; margin:0; color:#8f8f8f; font-size:.52em; }
+.home-page .brand { display:flex; flex-wrap:wrap; align-items:baseline; column-gap:34px; }
+.home-page .brand small { display:inline; margin:0; color:#8f8f8f; font-size:.76em; }
 .home-page .brand em { flex-basis:100%; margin-top:9px; color:var(--white); font-size:.52em; font-style:normal; letter-spacing:-.03em; }
 .page-title { font-size:clamp(24px,4vw,48px); font-weight:400; letter-spacing:-.06em; margin:16px 0 28px; text-transform:uppercase; }
 .gallery { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:var(--gap); }
@@ -94,7 +94,8 @@ img {
 .home-page .brand { position:fixed; top:32px; left:clamp(20px,4vw,56px); z-index:40; }
 .home-page .home-tagline { position:absolute; left:clamp(20px,4vw,56px); top:60px; color:var(--white); font-size:clamp(10px,.85vw,13px); letter-spacing:-.03em; }
 @media (max-width:620px) {
-  .home-page .brand { top:24px; left:20px; }
+  .home-page .brand { top:24px; left:20px; column-gap:22px; }
+  .home-page .brand small { font-size:.7em; }
   .home-page .home-tagline { top:58px; left:20px; font-size:9px; max-width:270px; }
 }
 
