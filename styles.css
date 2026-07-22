@@ -12,7 +12,7 @@ img {
 .brand { font-size:clamp(18px,2.1vw,29px); line-height:1.08; letter-spacing:-.06em; font-weight:500; }
 .brand small { display:block; margin-top:10px; color:#8f8f8f; font-size:.58em; letter-spacing:-.045em; }
 .brand .brand-specialty { margin-top:10px; color:var(--white); font-size:1em; letter-spacing:-.06em; }
-.nav { display:flex; align-items:flex-start; gap:clamp(18px,3vw,54px); font-size:10px; font-weight:600; padding-top:7px; }
+.nav { display:flex; align-items:flex-start; gap:clamp(18px,3vw,54px); font-size:clamp(14px,1.6vw,22px); font-weight:600; padding-top:7px; }
 .nav a, .artworks-trigger { white-space:nowrap; cursor:pointer; border:0; background:transparent; color:inherit; padding:0; font:inherit; text-transform:uppercase; }
 .artworks { position:relative; z-index:5; }
 .artworks-menu { display:none; position:absolute; right:0; top:18px; width:132px; padding:10px 0; background:#111; border:1px solid #292929; }
