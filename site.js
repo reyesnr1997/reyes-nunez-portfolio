@@ -72,12 +72,21 @@ document.querySelectorAll('.artworks-trigger').forEach((trigger) => {
 });
 document.querySelectorAll('.site-header').forEach((header) => {
   const toggle = document.createElement('button');
-  toggle.className = 'mobile-toggle'; toggle.type = 'button'; toggle.setAttribute('aria-label', 'Open menu');
-  toggle.addEventListener('click', () => header.classList.toggle('is-menu-open'));
+  toggle.className = 'mobile-toggle'; toggle.type = 'button'; toggle.setAttribute('aria-label', 'Open menu'); toggle.setAttribute('aria-expanded', 'false');
+  toggle.innerHTML = '<span></span><span></span>';
+  toggle.addEventListener('click', () => {
+    const open = header.classList.toggle('is-menu-open');
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  });
   header.append(toggle);
-  header.querySelector('.nav')?.addEventListener('click', () => header.classList.remove('is-menu-open'));
+  header.querySelector('.nav')?.addEventListener('click', (event) => {
+    if (!event.target.closest('a')) return;
+    header.classList.remove('is-menu-open');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.setAttribute('aria-label', 'Open menu');
+  });
 });
-
 
 
 
