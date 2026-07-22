@@ -1,14 +1,14 @@
 const artworks = [
-  {file:'10.png', title:'Untitled Diptych', medium:'Oil on canvas', size:'2 pieces, 1 × 1', project:'SALVADOR', credit:'Alea Media Salvador, SL — Salvador<br>Production Designer: Antonio Calvo Domínguez<br>Wardrobe: Ángela Marín Negro'},
-  {file:'11.png', title:'Untitled Diptych', medium:'Oil on canvas', size:'2 pieces, 1 × 1', project:'SALVADOR', credit:'Alea Media Salvador, SL — Salvador<br>Production Designer: Antonio Calvo Domínguez<br>Wardrobe: Ángela Marín Negro'},
-  {file:'ss.jpeg', title:'Small Baroque Panel', medium:'Acrylic on wood panel', size:'15 × 20 cm', project:'SALVADOR', credit:'Alea Media Salvador, SL — Salvador<br>Production Designer: Antonio Calvo Domínguez<br>Wardrobe: Ángela Marín Negro'},
+  {file:'10.png', title:'Untitled Diptych', medium:'Oil on canvas', size:'2 pieces, 1 × 1', project:'SALVADOR', credit:'Alea Media Salvador, SL — Salvador<br>Production Designer: Antonio Calvo Domínguez<br>Set dresser: Ángela Marín Negro'},
+  {file:'11.png', title:'Untitled Diptych', medium:'Oil on canvas', size:'2 pieces, 1 × 1', project:'SALVADOR', credit:'Alea Media Salvador, SL — Salvador<br>Production Designer: Antonio Calvo Domínguez<br>Set dresser: Ángela Marín Negro'},
+  {file:'ss.jpeg', title:'Small Baroque Panel', medium:'Acrylic on wood panel', size:'15 × 20 cm', project:'SALVADOR', credit:'Alea Media Salvador, SL — Salvador<br>Production Designer: Antonio Calvo Domínguez<br>Set dresser: Ángela Marín Negro'},
   {file:'Image.png', title:'Conversation at the Bar', medium:'Mixed media (acrylic, paper and pastels)', size:'50 × 40 cm'},
   {file:'B2F6CE42-793E-45C5-B657-8F5EFC62C0A8.jpeg', title:'Untitled', medium:'Charcoal on paper', size:'100 × 70 cm'},
   {file:'dddd.jpeg', title:'Still Life with Chair', medium:'Acrylic on wood', size:'20 × 14 cm'},
   {file:'rrrr.png', title:'Thread Brushes', medium:'Mixed media (acrylic on wood, thread and fabric)', size:'15 × 7 cm'},
-  {file:'CUERNOS.png', title:'Untitled', medium:'Acrylic on canvas', size:'100 × 70 cm', project:'SALVADOR', credit:'Alea Media Salvador, SL — Salvador<br>Production Designer: Antonio Calvo Domínguez<br>Wardrobe: Ángela Marín Negro'},
-  {file:'QQ.png', title:'Untitled', medium:'Acrylic on canvas', size:'100 × 70 cm', project:'SALVADOR', credit:'Alea Media Salvador, SL — Salvador<br>Production Designer: Antonio Calvo Domínguez<br>Wardrobe: Ángela Marín Negro'},
-  {file:'8.png', title:'Untitled', medium:'Acrylic on canvas', size:'200 × 100 cm', project:'NUDES', credit:'Vértigo Films, SL<br>Production Designer: Elisabet Gomà<br>Wardrobe: —'},
+  {file:'CUERNOS.png', title:'Untitled', medium:'Acrylic on canvas', size:'100 × 70 cm', project:'SALVADOR', credit:'Alea Media Salvador, SL — Salvador<br>Production Designer: Antonio Calvo Domínguez<br>Set dresser: Ángela Marín Negro'},
+  {file:'QQ.png', title:'Untitled', medium:'Acrylic on canvas', size:'100 × 70 cm', project:'SALVADOR', credit:'Alea Media Salvador, SL — Salvador<br>Production Designer: Antonio Calvo Domínguez<br>Set dresser: Ángela Marín Negro'},
+  {file:'8.png', title:'Untitled', medium:'Acrylic on canvas', size:'200 × 100 cm', project:'NUDES', credit:'Vértigo Films, SL<br>Production Designer: Elisabet Gomà<br>Set dresser: —'},
   {file:'9.png', title:'Untitled', medium:'Oil on canvas', size:'100 × 70 cm'},
   {file:'0CF4EDE3-E398-4EE7-9E48-915204BC6359.jpeg', title:'Untitled', medium:'Watercolour on paper', size:'A3 (29.7 × 42 cm)'},
   {file:'1716D623-5471-43F5-9B5F-9ABB9F54DB49.jpeg', title:'Untitled', medium:'Oil on canvas', size:'100 × 70 cm'},
@@ -77,7 +77,6 @@ document.querySelectorAll('.site-header').forEach((header) => {
   header.append(toggle);
   header.querySelector('.nav')?.addEventListener('click', () => header.classList.remove('is-menu-open'));
 });
-
 
 
 
