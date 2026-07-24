@@ -37,7 +37,7 @@ document.querySelectorAll('[data-gallery]').forEach((container) => {
     const image = document.createElement('img');
     image.loading = 'lazy'; image.src = asset(section, name); image.alt = section === 'fine-arts' ? item.title : `${section} artwork`;
     if (section === 'fine-arts') {
-      const link = document.createElement('a'); link.href = `artwork.html?id=${index}`; link.append(image); container.append(link);
+      const link = document.createElement('a'); link.href = `artwork.html?id=${index}&v=42`; link.append(image); container.append(link);
     } else {
       const button = document.createElement('button'); button.append(image); container.append(button);
       button.addEventListener('click', () => openLightbox(image.src, image.alt, section === 'props' && index === items.length - 2 ? 'uncropped' : section));
